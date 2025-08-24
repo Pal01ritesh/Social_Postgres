@@ -1,4 +1,3 @@
--- PostgreSQL Schema for JWT Social App
 
 -- Users table
 CREATE TABLE IF NOT EXISTS users (
