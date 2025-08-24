@@ -183,8 +183,6 @@ export const togglePostLike = async (request, response) => {
       });
     }
 
-    // This would need a separate likes table implementation
-    // For now, we'll just toggle the likes count
     const newLikesCount = post.likes_count === 0 ? 1 : 0;
     const updatedPost = await Post.updateLikesCount(postId, newLikesCount);
 

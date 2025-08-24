@@ -19,7 +19,7 @@ export const getPersonalizedFeed = async (request, response) => {
     const feedPosts = await Post.findAll(limit, offset);
     const posts = feedPosts.posts || feedPosts;
     
-    // Filter posts by user IDs (this should be done in the model, but for now we'll filter here)
+    // Filter posts by user IDs 
     const filteredPosts = posts.filter(post => allUserIds.includes(post.user_id));
 
     // Get usernames for all users in the feed

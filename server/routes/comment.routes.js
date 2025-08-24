@@ -10,10 +10,10 @@ import userAuth from "../middleware/userAuth.middleware.js";
 
 const router = express.Router();
 
-// All comment routes require authentication
+
 router.use(userAuth);
 
-// Comment routes
+
 router.post("/:postId", addComment);
 router.get("/:postId", getPostComments);
 router.put("/:commentId", updateComment);

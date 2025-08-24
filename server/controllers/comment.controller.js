@@ -253,8 +253,6 @@ export const toggleCommentLike = async (request, response) => {
       });
     }
 
-    // This would need a separate likes table implementation
-    // For now, we'll just toggle the likes count
     const newLikesCount = comment.likes_count === 0 ? 1 : 0;
     const updatedComment = await Comment.updateLikesCount(commentId, newLikesCount);
 
