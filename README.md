@@ -31,22 +31,23 @@ It provides features such as **user authentication, posts, comments, user connec
 
 ## 📂 Project Structure
 
+```
 JWT_social/
-├── client/ # Frontend (not included in this repository)
-├── server/ # Backend
-│ ├── config/ # Configuration files (PostgreSQL, Nodemailer, etc.)
-│ ├── controllers/ # API controllers
-│ ├── middleware/ # Middleware (e.g., authentication)
-│ ├── models/ # Database models
-│ ├── routes/ # API routes
-│ ├── scripts/ # Utility scripts (e.g., database setup)
-│ ├── src/ # Source files
-│ ├── .env # Environment variables
-│ ├── package.json # Node.js dependencies and scripts
-│ └── server.js # Main server file
-├── render.yaml # Render deployment configuration
-└── .gitignore # Ignored files and directories
-
+├── client/               # Frontend (not included in this repository)
+├── server/               # Backend
+│   ├── config/           # Configuration files (PostgreSQL, Nodemailer, etc.)
+│   ├── controllers/      # API controllers
+│   ├── middleware/       # Middleware (e.g., authentication)
+│   ├── models/           # Database models
+│   ├── routes/           # API routes
+│   ├── scripts/          # Utility scripts (e.g., database setup)
+│   ├── src/              # Source files
+│   ├── .env              # Environment variables
+│   ├── package.json      # Node.js dependencies and scripts
+│   └── server.js         # Main server file
+├── render.yaml           # Render deployment configuration
+└── .gitignore            # Ignored files and directories
+```
 
 
 🔑 Environment Variables
